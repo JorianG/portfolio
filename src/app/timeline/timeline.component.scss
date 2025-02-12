@@ -1,0 +1,13 @@
+
+
+.custom-theme {
+    --ngx-timeline-icon: #33d399; /* Couleur de l'icône */
+    --ngx-timeline-period-inner-container: #33d399; /* Couleur de l'arrière-plan de la période */
+    --ngx-timeline-line-background: #2196F3; /* Couleur de la ligne de la timeline */
+    /* Ajoutez d'autres variables de style selon vos besoins */
+  }
+  
+
+.hour {
+  display: none !important;
+}

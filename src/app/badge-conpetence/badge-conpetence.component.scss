@@ -1,0 +1,13 @@
+:host ::ng-deep .slim {
+    height: 24px; // Adjust the height as needed
+    line-height: 24px; // Ensure text is vertically centered
+    padding: 0 8px; // Adjust padding to fit the new height
+    font-size: 12px;
+    width: fit-content !important;
+    margin-right: 5px; // Reduce text size
+}
+
+:host ::ng-deep .p-chip .pi {
+    color: white; // Apply your desired color
+    font-size: 16px; // Adjust icon size if needed
+}

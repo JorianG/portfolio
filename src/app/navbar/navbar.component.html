@@ -1,0 +1,18 @@
+<c-navbar colorScheme="light" expand="md" class="py-1 sticky-top" >
+    <c-container fluid>
+        <a cNavbarBrand>
+            <app-profile-img [size]="60"></app-profile-img>
+            <span class="align-middle ms-2 text-green-500 fw-bold fs-4">Jorian G. </span>
+        </a>
+        <div cCollapse navbar>
+            <c-navbar-nav class="me-auto mb-2 mb-lg-0">
+                <app-nav-item [href]="'#profil'">Profil</app-nav-item>
+                <app-nav-item [href]="'./'">Projets</app-nav-item>
+                <app-nav-item [href]="'#competence'">Compétences</app-nav-item>
+                <app-nav-item [href]="'#contact'">Contacts</app-nav-item>
+            </c-navbar-nav>
+          </div>
+        <p-button icon="pi pi-envelope" iconPos="left" label="Contact-me"  size="large" class="text-dark"></p-button>
+      
+    </c-container>
+  </c-navbar>

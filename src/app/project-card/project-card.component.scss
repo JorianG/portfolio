@@ -1,0 +1,9 @@
+// Add this CSS to create a pop effect on hover
+:host ::ng-deep .p-card {
+    transition: transform 0.3s ease-in-out;
+    height: 100% !important;
+}
+
+:host ::ng-deep .p-card:hover {
+    transform: scale(1.03);
+}

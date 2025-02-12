@@ -1,0 +1,35 @@
+<div class="p-3 h-100" style="width: 100%; display: flex;">
+    <p-card [style]="{'overflow': 'hidden'}">
+        <ng-template pTemplate="header">
+            <img [src]="image" alt="Project Image"  class="w-full" style="width: 100%; height: 200px; object-fit: cover;">
+        </ng-template>
+        <ng-container >
+            <!-- <app-badge-conpetence
+              [textContent]="badge.textContent" 
+              [bgColor]="badge.bgColor" 
+              [icon]="badge.icon" 
+              [size]="badge.size">
+            </app-badge-conpetence> -->
+            <ng-content></ng-content>
+        </ng-container>
+        <ng-template pTemplate="languages">
+            <div [innerHTML]="languages"></div>
+        </ng-template>
+        <ng-template pTemplate="title">
+            <h4 class="text-dark-blue fw-bold">{{ title }}</h4>
+        </ng-template>
+        <ng-template pTemplate="content" >
+            <p class="py-2">{{ content }}</p>
+        </ng-template>
+        <ng-template pTemplate="footer">
+            <a href="{{ githubLink }}">
+                <button pButton type="button" class="p-button-text" style="background-color: #02040a; color: white;" >
+                    <i class="pi pi-github"></i>
+                    Github
+                </button>
+             </a>
+            
+            
+        </ng-template>
+    </p-card>
+</div>

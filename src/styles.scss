@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+@import "@coreui/coreui/scss/coreui";
+
+
+
+$green: #33d399; // Example green color
+$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+.text-green{
+    color: #33d399;
+}
+
+.bg-green{
+    background-color: #33d399;
+}
+
+.bg-dark-blue{
+    background-color: #111827;
+}
+
+.fw-800{
+    font-weight: 800
+}
+
+.hour {
+    display: none !important;
+  }

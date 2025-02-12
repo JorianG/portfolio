@@ -1,0 +1,11 @@
+<div class="custom-theme">
+    <ngx-timeline [events]="events" [langCode]="'fr'" [enableAnimation]="false" [orientation]="NgxTimelineOrientation.VERTICAL">
+        <ng-template #eventCustomTemplate let-event="event">
+            <div class="event">
+                <h3>{{ event.title }}</h3>
+                <p>{{ event.description }}</p>
+                <p>{{ event.timestamp}}</p>
+            </div>
+        </ng-template>
+    </ngx-timeline>
+</div>
