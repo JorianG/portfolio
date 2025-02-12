@@ -3,6 +3,7 @@ import { CardModule } from 'primeng/card';
 import { BadgeConpetenceComponent } from '../badge-conpetence/badge-conpetence.component';
 import { CommonModule } from '@angular/common';
 import { LinkCompetenceComponent } from "../link-competence/link-competence.component";
+import { ButtonModule } from 'primeng/button';
 
 interface Badge {
   textContent: string;
@@ -14,7 +15,7 @@ interface Badge {
 @Component({
   selector: 'app-project-card',
   standalone: true,
-  imports: [CardModule, CommonModule, LinkCompetenceComponent],
+  imports: [CardModule, CommonModule, LinkCompetenceComponent, ButtonModule],
   templateUrl: './project-card.component.html',
   styleUrl: './project-card.component.scss'
 })
@@ -23,6 +24,6 @@ export class ProjectCardComponent {
   @Input() title: string = 'Default Title'; // Default title
   @Input() content: string = 'Default content description'; // Default content
   @Input() githubLink: string = '#'; // Default GitHub link
-  @Input() competenceBadges: Badge[] = []; // New input for competence badges
+  @Input() badges: string = ''; // New input for competence badges
   @Input() languages: string = '' // New input for competence badges
 }

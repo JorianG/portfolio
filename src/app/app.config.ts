@@ -7,13 +7,16 @@ import Aura from '@primeng/themes/aura';
 import { routes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
-  providers: [
-      provideAnimationsAsync(),
-      providePrimeNG({
-          theme: {
-              preset: Aura
-          }
-      })
-  ]
+    providers: [
+            provideAnimationsAsync(),
+            providePrimeNG({
+                    theme: {
+                            preset: Aura,
+                            options: {
+                                    mode: 'light'
+                            }
+                    }
+            })
+    ]
 };
 

@@ -10,10 +10,12 @@ import { AccordionModule } from 'primeng/accordion';
 import { BadgeConpetenceComponent } from "./badge-conpetence/badge-conpetence.component";
 import { ButtonModule } from 'primeng/button';
 import { LinkCompetenceComponent } from './link-competence/link-competence.component';
+import { IconLanguageComponent } from './icon-language/icon-language.component';
+import { TagModule } from 'primeng/tag';
 
 @Component({
   selector: 'app-root',
-  imports: [NavbarComponent, ProfileImgComponent, ProjectCardComponent, TimelineComponent, AccordionModule, BadgeConpetenceComponent, ButtonModule, LinkCompetenceComponent],
+  imports: [NavbarComponent,TagModule, ProfileImgComponent, ProjectCardComponent, TimelineComponent, AccordionModule, BadgeConpetenceComponent, ButtonModule, LinkCompetenceComponent, IconLanguageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -37,7 +39,7 @@ export class AppComponent {
 
       console.log('Event:', event);
       console.log('Before:', this.active);
-      // this.active = value;
+      this.active = value;
       console.log('After:', this.active);
 
       // Reset the flag after a short delay

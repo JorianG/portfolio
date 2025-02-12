@@ -4,7 +4,8 @@
     padding: 0 8px; // Adjust padding to fit the new height
     font-size: 12px;
     width: fit-content !important;
-    margin-right: 5px; // Reduce text size
+    margin-right: 5px;
+    position: relative; // Reduce text size
 }
 
 :host ::ng-deep .p-chip .pi {
